@@ -293,6 +293,7 @@ footer img {
    .highlight-img {
       margin-top: 30px;
    }
+   .player img,
    .highlight-img img {
       width: 100%;
       height: auto;
