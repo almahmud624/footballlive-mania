@@ -210,6 +210,9 @@ footer img {
       padding-left: 15px;
       padding-right: 15px;
    }
+   .header-container {
+      padding-bottom: 60px;
+   }
    .top-bar {
       display: none;
    }
@@ -229,9 +232,13 @@ footer img {
       width: 329px;
       height: 259px;
    }
+   .container {
+      padding-top: 47px;
+   }
    .players {
       grid-template-columns: repeat(1, 1fr);
       grid-column-gap: 0;
+      padding-bottom: 60px;
    }
    .player img,
    .highlight-img img {
@@ -244,11 +251,50 @@ footer img {
    .highlight-txt {
       margin-right: 0;
    }
+   .section-title {
+      font-size: 30px;
+   }
    .highlight-img {
       margin-top: 30px;
    }
    footer img {
       width: 271px;
       height: 63px;
+   }
+}
+
+/***---------------------------
+         tablet devices
+----------------------------***/
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+   .header-container,
+   .container,
+   .footer-container {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+   .top-bar {
+      display: none;
+   }
+   .banner {
+      flex-direction: column;
+   }
+   .banner-img {
+      margin-top: 50px;
+   }
+   .players {
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 60px;
+   }
+   .highlights {
+      flex-direction: column;
+   }
+   .highlight-img {
+      margin-top: 30px;
+   }
+   .highlight-img img {
+      width: 100%;
+      height: auto;
    }
 }
