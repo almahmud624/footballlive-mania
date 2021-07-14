@@ -202,7 +202,9 @@ footer img {
          media queries
 ----------------------------***/
 @media only screen and (max-width: 688px) {
-   .header-container {
+   .header-container,
+   .container,
+   .footer-container {
       width: 100%;
       padding-left: 15px;
       padding-right: 15px;
@@ -226,11 +228,9 @@ footer img {
       width: 329px;
       height: 259px;
    }
-   .container {
-      width: 100%;
-   }
    .players {
       grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 0;
    }
    .highlights {
       flex-direction: column;
