@@ -256,6 +256,9 @@ footer img {
    .highlight-img {
       margin-top: 30px;
    }
+   .footer-container {
+      padding-top: 43px;
+   }
    footer img {
       width: 271px;
       height: 63px;
@@ -296,5 +299,8 @@ footer img {
    .highlight-img img {
       width: 100%;
       height: auto;
+   }
+   .footer-container {
+      padding-top: 43px;
    }
 }
