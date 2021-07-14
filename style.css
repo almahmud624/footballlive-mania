@@ -3,9 +3,9 @@
 ------------------***/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
-/***-----------------
-         utilities
-------------------***/
+/***----------------------------------
+        common styles & utilities
+----------------------------------***/
 body {
    font-family: 'Poppins', sans-serif;
    margin: 0;
@@ -33,7 +33,40 @@ main {
    padding-top: 70px;
    box-sizing: border-box;
 }
-
+.highlights,
+.explore {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.section-title {
+   font-size: 48px;
+   color: #0A0826;
+   margin: 0;
+}
+.highlight-txt p,
+.explore-txt p {
+   font-size: 16px;
+   color: #6C6C6C;
+   margin-top: 8px;
+   margin-bottom: 24px;
+}
+#watch-btn i,
+#more-btn i {
+   margin-left: 8px;
+   transition: all 0.5s;
+}
+#watch-btn:hover,
+#more-btn:hover {
+   color: #E02C6D;
+   background-color: transparent;
+   border: 2px solid #E02C6D;
+}
+#watch-btn:hover i,
+#more-btn:hover i {
+   color: #E02C6D;
+   transform: translateX(7px);
+}
 /***------------------------
          header styles
 -------------------------***/
@@ -122,41 +155,65 @@ nav a {
 /***---------------------------
          highlights styles
 ----------------------------***/
-.highlights {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
 .highlight-txt {
    margin-right: 77px;
-}
-.section-title {
-   font-size: 48px;
-   color: #0A0826;
-   margin: 0;
-}
-.highlight-txt p {
-   font-size: 16px;
-   color: #6C6C6C;
-   margin-top: 8px;
-   margin-bottom: 24px;
-}
-#watch-btn i {
-   margin-left: 8px;
-   transition: all 0.5s;
-}
-#watch-btn:hover {
-   color: #E02C6D;
-   background-color: transparent;
-   border: 2px solid #E02C6D;
-}
-#watch-btn:hover i {
-   color: #E02C6D;
-   transform: translateX(7px);
 }
 .highlight-img img {
    width: 567px;
    height: 427px;
+}
+
+/***---------------------------
+         explore styles
+----------------------------***/
+.explore {
+   padding-top: 50px;
+}
+.explore-img img {
+   width: 550px;
+   height: 350px;
+}
+.explore-txt {
+   margin-left: 77px;
+}
+
+/***---------------------------
+         newsletter styles
+----------------------------***/
+.newsletter {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 80px 0 20px 0;
+}
+.newsletter form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 450px;
+}
+.newsletter input {
+   width: 100%;
+   padding: 15px 12px;
+   font-size: 20px;
+   border: 2px solid  #6C6C6C;
+   border-radius: 3px;
+   margin: 20px 0;
+   box-sizing: border-box;
+}
+.newsletter form button {
+   padding: 12px 35px;
+   font-size: 20px;
+   border-radius: 3px;
+   border: 2px solid  #6C6C6C;
+   background-color: #6C6C6C;
+   color: #fff;
+   cursor: pointer;
+   transition: all 0.5s;
+}
+.newsletter form button:hover {
+   background-color: transparent;
+   color: #6C6C6C;
 }
 
 /***---------------------------
@@ -240,11 +297,13 @@ footer img {
       padding-bottom: 60px;
    }
    .player img,
-   .highlight-img img {
+   .highlight-img img,
+   .explore-img img {
       width: 100%;
       height: auto;
    }
-   .highlights {
+   .highlights,
+   .explore {
       flex-direction: column;
    }
    .highlight-txt {
@@ -253,8 +312,24 @@ footer img {
    .section-title {
       font-size: 30px;
    }
-   .highlight-img {
+   .highlight-img,
+   .explore-img {
       margin-top: 30px;
+   }
+   .explore {
+      flex-direction: column-reverse;
+   }
+   .explore-txt {
+      margin-left: 0;
+   }
+   .newsletter {
+      padding-top: 40px;
+   }
+   .newsletter .section-title {
+      text-align: center;
+   }
+   .newsletter form {
+      width: 100%;
    }
    .footer-container {
       padding-top: 43px;
@@ -289,16 +364,25 @@ footer img {
       grid-template-columns: repeat(2, 1fr);
       padding-bottom: 60px;
    }
-   .highlights {
+   .highlights,
+   .explore {
       flex-direction: column;
    }
-   .highlight-img {
+   .highlight-img,
+   .explore-img {
       margin-top: 30px;
    }
    .player img,
-   .highlight-img img {
+   .highlight-img img,
+   .explore img {
       width: 100%;
       height: auto;
+   }
+   .explore {
+      flex-direction: column-reverse;
+   }
+   .explore-txt {
+      margin-left: 0;
    }
    .footer-container {
       padding-top: 43px;
